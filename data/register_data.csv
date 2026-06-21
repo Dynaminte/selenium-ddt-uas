@@ -12,5 +12,5 @@ LongMobile,User,long@test.com,Male,812300000099,PASS,Mobile otomatis terpotong m
 LetterMobile,User,letter@test.com,Male,abcdefghij,FAIL,Mobile berisi huruf bukan angka
 LongName,LoremIpsumDolorSitAmet,longname@test.com,Male,8123000001,PASS,Nama sangat panjang masih diterima
 SpecialChar,O'Brien-Smith,special@test.com,Female,8123000004,PASS,Last name dengan karakter khusus (apostrof/strip)
-BadEmail,Format,formatsalah,Male,8123000005,FAIL,Email format salah wajib ditolak (email tidak divalidasi ketat)
+BadEmail,Format,formatsalah,Male,8123000005,FAIL,Email format salah wajib ditolak karena email harus valid
 AllEmpty,,,,,FAIL,Semua field kosong
