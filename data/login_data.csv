@@ -1,0 +1,8 @@
+username,password,expected,description
+standard_user,secret_sauce,PASS,Login valid - standard_user
+locked_out_user,secret_sauce,FAIL,Login user yang dikunci sistem
+wrong_user,secret_sauce,FAIL,Username tidak terdaftar
+standard_user,wrong_pass,FAIL,Password salah untuk user valid
+,secret_sauce,FAIL,Username dikosongkan
+standard_user,,FAIL,Password dikosongkan
+,,FAIL,Username dan password keduanya kosong

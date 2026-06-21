@@ -1,0 +1,16 @@
+first_name,last_name,email,gender,mobile,expected,description
+Budi,Santoso,budi@test.com,Male,8123456789,PASS,Data lengkap valid - Male
+Siti,Rahayu,siti@test.com,Female,8234567890,PASS,Data lengkap valid - Female
+Andi,Wijaya,andi@test.com,Other,8123000002,PASS,Data lengkap valid - gender Other
+Dina,Permata,,Female,8123000003,PASS,Email kosong tapi tetap valid (email tidak wajib)
+,Kosong,kosong@test.com,Male,8345678901,FAIL,First name kosong - wajib diisi
+NoLast,,nolast@test.com,Male,8456789012,FAIL,Last name kosong - wajib diisi
+NoMobile,User,nomobile@test.com,Male,,FAIL,Mobile number kosong - wajib diisi
+NoGenderUser,Test,nogender@test.com,,8890123456,FAIL,Gender tidak dipilih - wajib dipilih
+ShortMobile,User,short@test.com,Male,812,FAIL,Mobile kurang dari 10 digit - ditolak validasi
+LongMobile,User,long@test.com,Male,812300000099,PASS,Mobile otomatis terpotong menjadi 10 digit oleh sistem sehingga tetap PASS
+LetterMobile,User,letter@test.com,Male,abcdefghij,FAIL,Mobile berisi huruf bukan angka
+LongName,LoremIpsumDolorSitAmet,longname@test.com,Male,8123000001,PASS,Nama sangat panjang masih diterima
+SpecialChar,O'Brien-Smith,special@test.com,Female,8123000004,PASS,Last name dengan karakter khusus (apostrof/strip)
+BadEmail,Format,formatsalah,Male,8123000005,FAIL,Email format salah wajib ditolak (email tidak divalidasi ketat)
+AllEmpty,,,,,FAIL,Semua field kosong
